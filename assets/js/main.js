@@ -112,7 +112,7 @@
   );
 
   /**
-   * Scrool with ofset on links with a class name .scrollto
+   * Scroll with offset on links with a class name .scrollto
    */
   on(
     "click",
@@ -256,4 +256,5 @@
       mirror: false,
     });
   });
+
 })();
