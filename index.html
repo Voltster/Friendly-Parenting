@@ -94,15 +94,14 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-7 hero-img" data-aos="zoom-out" data-aos-delay="200">
+        <div class="col-lg-7 hero-img" data-aos="zoom-out" data-aos-delay="100">
           <div class="slider-box">
             <div id="slider">
               <figure>
                 <img src="assets/img/Vector-img/slider-img1.svg" alt="Friendly-Parenting" loading="lazy" />
                 <img src="assets/img/Vector-img/slider-img2.svg" alt="Friendly-Parenting" loading="lazy" />
                 <img src="assets/img/Vector-img/happy-family.png" alt="Friendly-Parenting" loading="lazy" />
-                <img src="assets/img/Vector-img/Mom and daughter at meeting with psychologist [Converted].svg"
-                  alt="Friendly-Parenting" loading="lazy" />
+                <img src="assets/img/Vector-img/slider-img2.svg" alt="Friendly-Parenting" loading="lazy" />
               </figure>
             </div>
           </div>
@@ -123,7 +122,7 @@
             <h3>
               Welcome all,<br />
               FRIENDLY PARENTING is a team of professionals which serves
-              humanity in the field of Parental Coaching.
+              humanity in the field of Parental Coaching and Life Skill Coaching.
             </h3>
             <p>
               Parenting in simple words is raising children responsibly
@@ -147,10 +146,10 @@
           </div>
           <div class="col-md-7 pt-4" data-aos="fade-left" data-aos-delay="100">
             <h3>Our Mission & Vision</h3>
-            <p>
-              Our mission is to help 1 million parents.<br />
+            <h5 >
+              Our mission is to help 1 million parents and students.<br />
               Our vision for friendly parenting is to see a happy family.
-            </p>
+            </h5>
             <ul>
               <li data-aos="fade-up">
                 <i class="bi bi-check"></i> Happy , healthy, & balanced family
@@ -388,51 +387,40 @@
         </div>
       </div>
       <!-- ------YouTube-Videos---- -->
+      
       <div id="yt-video" class="yt-video">
+        
         <div class="container">
             <div class="row no-gutters" data-aos="fade-up">
                 <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="100">
-                    <div class="youtube-video" data-id="I2RHYpl5fAY"></div>
+                  <div class="youtube-video" data-id="I2RHYpl5fAY">
+                    <img src="https://img.youtube.com/vi/I2RHYpl5fAY/mqdefault.jpg" alt="YouTube Thumbnail" class="video-thumbnail">
+                    <div class="play-button" onclick="playVideo('I2RHYpl5fAY')">
+                      <i class="bi bi-play-btn-fill"></i>
+                    </div>
+                </div>
                 </div>
     
                 <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="200">
-                    <div class="youtube-video" data-id="1vVw9TGNWpQ"></div>
+                  <div class="youtube-video" data-id="1vVw9TGNWpQ">
+                    <img src="https://img.youtube.com/vi/1vVw9TGNWpQ/mqdefault.jpg" alt="YouTube Thumbnail" class="video-thumbnail">
+                    <div class="play-button" onclick="playVideo('1vVw9TGNWpQ')">
+                      <i class="bi bi-play-btn-fill"></i>
+                    </div>
+                </div>
                 </div>
     
                 <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="300">
-                    <div class="youtube-video" data-id="RtnNHLOlssg"></div>
+                  <div class="youtube-video" data-id="RtnNHLOlssg">
+                    <img src="https://img.youtube.com/vi/RtnNHLOlssg/mqdefault.jpg" alt="YouTube Thumbnail" class="video-thumbnail">
+                    <div class="play-button" onclick="playVideo('RtnNHLOlssg')">
+                      <i class="bi bi-play-btn-fill"></i>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>
     </div>
-    
-
-      <!-- <div id="yt-video" class="yt-video">
-        <div class="container">
-          <div class="row no-gutters" data-aos="fade-up">
-            <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="100">
-              <iframe width="460" height="315" src="https://www.youtube.com/embed/I2RHYpl5fAY"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            </div>
-
-            <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="200">
-              <iframe width="460" height="315" src="https://www.youtube.com/embed/1vVw9TGNWpQ"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            </div>
-
-            <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="300">
-              <iframe width="460" height="315" src="https://www.youtube.com/embed/RtnNHLOlssg"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-      </div> -->
     </div>
   </section>
   <!-- -- End About Section -- -->
@@ -614,7 +602,7 @@
               <div class="info-box mt-4" data-aos="fade-right">
                 <i class="bx bx-envelope"></i>
                 <h3>Email Us</h3>
-                <p>info@friendlyparenting.in</p>
+                <a href="mailto:friendlyparenting.sv.gmail.com"  style="color: #57677F;">friendlyparenting.sv.gmail.com</a>
               </div>
             </div>
             <div class="col-md-6">
@@ -706,62 +694,27 @@
   <!-- Vendor JS Files -->
   <script>
 
-function createYouTubePlayer(videoId, container) {
-    var playerDiv = document.createElement('div');
-    playerDiv.setAttribute('id', 'player-' + videoId);
-    container.appendChild(playerDiv);
+function playVideo(videoId) {
+        var iframe = document.createElement('iframe');
+        iframe.setAttribute('width', '100%');
+        iframe.setAttribute('height', '200px');
+        iframe.setAttribute('src', 'https://www.youtube.com/embed/' + videoId + '?autoplay=1');
+        iframe.setAttribute('frameborder', '0');
+        iframe.setAttribute('allowfullscreen', '');
 
-    new YT.Player('player-' + videoId, {
-        height: '315',
-        width: '460',
-        videoId: videoId,
-        playerVars: {
-            'autoplay': 0,
-            'controls': 1
-        },
-        events: {
-            'onReady': function (event) {
-                playerDiv.style.display = 'block';
-            }
-        }
-    });
-}
+        var videoContainer = document.querySelector('.youtube-video[data-id="' + videoId + '"]');
+        videoContainer.innerHTML = '';
+        videoContainer.appendChild(iframe);
+    }
 
-function loadYouTubePlayers() {
-    var youtubeVideos = document.querySelectorAll('.youtube-video');
-
-    youtubeVideos.forEach(function (video) {
-        var videoId = video.getAttribute('data-id');
-        var container = video.parentElement;
-
-        var thumbnailImg = document.createElement('img');
-        thumbnailImg.src = 'https://img.youtube.com/vi/' + videoId + '/sddefault.jpg';
-        thumbnailImg.addEventListener('click', function () {
-            createYouTubePlayer(videoId, container);
-            this.style.display = 'none';
-        });
-
-        video.appendChild(thumbnailImg);
-    });
-}
-
-// Load the YouTube Iframe API asynchronously
-var tag = document.createElement('script');
-tag.src = 'https://www.youtube.com/iframe_api';
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-// When the API is ready, call the function to load the players
-var player;
-function onYouTubeIframeAPIReady() {
-    loadYouTubePlayers();
-}
-
-
-    const currentURL = window.location.href;
-    const modifiedURL = currentURL.replace('index.html', '');
-    const nextPageURL = modifiedURL + 'thankyou.html';
-    document.getElementById('nextPage').value = nextPageURL;
+      const currentURL = window.location.href;
+      const hashIndex = currentURL.indexOf('#')
+      let modifiedURL = currentURL;
+      if (hashIndex !== -1) {
+      modifiedURL = currentURL.slice(0, hashIndex).replace('index.html', '')
+       }
+      const nextPageURL = modifiedURL + 'thankyou.html';
+      document.getElementById('nextPage').value = nextPageURL;
   </script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

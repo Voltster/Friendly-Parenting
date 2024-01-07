@@ -1,6 +1,17 @@
 (function () {
   "use strict";
 
+  window.scroll({
+    top: 2500, 
+    left: 0, 
+    behavior: 'smooth'
+  });
+window.scrollBy({ 
+  // top: 0, // could be negative value
+  left: 0, 
+  behavior: 'smooth' 
+});
+
   /**
    * Easy selector helper function
    */
