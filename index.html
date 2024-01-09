@@ -60,6 +60,14 @@
           <li>
             <a class="nav-link scrollto" href="service.html#our-service">Our Service</a>
           </li>
+                    <!-- <li class="dropdown">
+            <a href="service.html#our-service"><span>Our Service</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="service.html#our-service#tab-1">Life Skills Coaching</a></li>
+              <li><a href="service.html#tab-2">Parenting Coaching</a></li>
+              <li><a href="#">School Seminars</a></li>
+            </ul> -->
+          </li>
           <li>
             <a class="nav-link scrollto" href="service.html#courses">Courses</a>
           </li>
@@ -694,27 +702,8 @@
   <!-- Vendor JS Files -->
   <script>
 
-function playVideo(videoId) {
-        var iframe = document.createElement('iframe');
-        iframe.setAttribute('width', '100%');
-        iframe.setAttribute('height', '200px');
-        iframe.setAttribute('src', 'https://www.youtube.com/embed/' + videoId + '?autoplay=1');
-        iframe.setAttribute('frameborder', '0');
-        iframe.setAttribute('allowfullscreen', '');
-
-        var videoContainer = document.querySelector('.youtube-video[data-id="' + videoId + '"]');
-        videoContainer.innerHTML = '';
-        videoContainer.appendChild(iframe);
-    }
-
-      const currentURL = window.location.href;
-      const hashIndex = currentURL.indexOf('#')
-      let modifiedURL = currentURL;
-      if (hashIndex !== -1) {
-      modifiedURL = currentURL.slice(0, hashIndex).replace('index.html', '')
-       }
-      const nextPageURL = modifiedURL + 'thankyou.html';
-      document.getElementById('nextPage').value = nextPageURL;
+    
+      
   </script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

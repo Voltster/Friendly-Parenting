@@ -12,6 +12,8 @@ window.scrollBy({
   behavior: 'smooth' 
 });
 
+
+
   /**
    * Easy selector helper function
    */
@@ -169,43 +171,43 @@ window.scrollBy({
   /**
    * Porfolio isotope and filter
    */
-  window.addEventListener("load", () => {
-    let portfolioContainer = select(".portfolio-container");
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: ".portfolio-item",
-      });
+  // window.addEventListener("load", () => {
+  //   let portfolioContainer = select(".portfolio-container");
+  //   if (portfolioContainer) {
+  //     let portfolioIsotope = new Isotope(portfolioContainer, {
+  //       itemSelector: ".portfolio-item",
+  //     });
 
-      let portfolioFilters = select("#portfolio-flters li", true);
+  //     let portfolioFilters = select("#portfolio-flters li", true);
 
-      on(
-        "click",
-        "#portfolio-flters li",
-        function (e) {
-          e.preventDefault();
-          portfolioFilters.forEach(function (el) {
-            el.classList.remove("filter-active");
-          });
-          this.classList.add("filter-active");
+  //     on(
+  //       "click",
+  //       "#portfolio-flters li",
+  //       function (e) {
+  //         e.preventDefault();
+  //         portfolioFilters.forEach(function (el) {
+  //           el.classList.remove("filter-active");
+  //         });
+  //         this.classList.add("filter-active");
 
-          portfolioIsotope.arrange({
-            filter: this.getAttribute("data-filter"),
-          });
-          portfolioIsotope.on("arrangeComplete", function () {
-            AOS.refresh();
-          });
-        },
-        true
-      );
-    }
-  });
+  //         portfolioIsotope.arrange({
+  //           filter: this.getAttribute("data-filter"),
+  //         });
+  //         portfolioIsotope.on("arrangeComplete", function () {
+  //           AOS.refresh();
+  //         });
+  //       },
+  //       true
+  //     );
+  //   }
+  // });
 
   /**
    * Initiate portfolio lightbox
    */
-  const portfolioLightbox = GLightbox({
-    selector: ".portfolio-lightbox",
-  });
+  // const portfolioLightbox = GLightbox({
+  //   selector: ".portfolio-lightbox",
+  // });
 
   /**
    * Portfolio details slider
@@ -255,6 +257,9 @@ window.scrollBy({
       },
     },
   });
+  
+
+  
 
   /**
    * Animation on scroll
@@ -269,3 +274,41 @@ window.scrollBy({
   });
 
 })();
+
+
+function playVideo(videoId) {
+  var iframe = document.createElement('iframe');
+  // iframe.setAttribute('width', '100%');
+  // iframe.setAttribute('height', '');
+  iframe.setAttribute('src', 'https://www.youtube.com/embed/' + videoId + '?autoplay=1');
+  iframe.setAttribute('frameborder', '0');
+  iframe.setAttribute('allowfullscreen', '');
+
+  var videoContainer = document.querySelector('.youtube-video[data-id="' + videoId + '"]');
+  videoContainer.innerHTML = '';
+  videoContainer.appendChild(iframe);
+}
+
+
+
+const currentURL = window.location.href;
+const hashIndex = currentURL.indexOf('#')
+let modifiedURL = currentURL;
+if (hashIndex !== -1) {
+modifiedURL = currentURL.slice(0, hashIndex).replace('index.html', '')
+ }
+const nextPageURL = modifiedURL + 'thankyou.html';
+document.getElementById('nextPage').value = nextPageURL;
+
+
+
+function closeOtherDetails(clickedDetails) {
+  const allDetails = document.querySelectorAll('details');
+  
+      allDetails.forEach((details) => {
+        if (details !== clickedDetails) {
+          details.removeAttribute('open');
+        }
+      })
+    }
+
